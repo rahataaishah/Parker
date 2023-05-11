@@ -199,7 +199,10 @@ nav a{
     margin: auto;
 }
 
-
+a{
+    text-decoration:none;
+   }
+   
 @media screen and (min-width:900px){
     #reviews-wrapper{
         width:100vw;

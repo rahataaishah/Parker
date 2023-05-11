@@ -206,7 +206,10 @@ nav a{
         width: 80%;
     }
 }
-
+li {list-style: none; }
+a{
+    text-decoration:none;
+   }
 .offers > h1, .offers>p{
     padding-left: 1em;
     padding-right: 1em;

@@ -20,7 +20,10 @@
       padding: 1.5em;
     }
   }
-  
+
+  a{
+    text-decoration:none;
+   }
   .brand-name {
     font-size: 23px;
     display: inline;
@@ -288,8 +291,7 @@
     }
   
     .faq-container{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: inline-block;
     }
   }
   
