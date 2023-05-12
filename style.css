@@ -198,7 +198,7 @@ nav a{
 #reviews-wrapper{
     margin: auto;
 }
-
+li {list-style: none; }
 a{
     text-decoration:none;
    }
