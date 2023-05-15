@@ -196,7 +196,6 @@ iframe{
     box-shadow:0px 10px 80px -10px rgba(44,54,92,0.2);
     border-radius: 10px;
     background-color: #1e2327;
-    filter: brightness(50%);
     width: 80vw;
     height: 40vh;
     transition-duration: 1s;
@@ -214,30 +213,6 @@ iframe{
     iframe:hover{
         filter: none;
     }
-}
-
-
-
- .visit-us{
-     width: 80%;
-     margin: auto;
-     padding-bottom: 30px;
- }
-
- @media screen and (min-width:900px){
-     .visit-us{
-         width: 70%;
-     }
- }
-
- .visit-us > h1{
-     font-size: 35px;
-     color: #333;
-     padding-bottom: 16px;
-}
-
-.visit-us >P{
-    color: #666;
 }
 
 
