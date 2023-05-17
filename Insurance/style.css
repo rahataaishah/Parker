@@ -284,7 +284,10 @@
   @media screen and (min-width: 900px) {
     .faqs {
       width: 80%;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      margin-top: 40px;
     }
   
     .faq-container{
@@ -384,3 +387,97 @@
     }
   }
   
+  .offers{
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+    /* background-color: #003bde; */
+}
+
+@media screen and (min-width:900px){
+    .offers{
+        width: 80%;
+    }
+}
+li {list-style: none; }
+
+a{
+    text-decoration:none;
+   }
+   
+.offers > h1, .offers>p{
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.offer{
+    padding: 2em 1em 2em 1em;
+    line-height: 1.5em;
+    
+}
+
+.offer>img{
+    padding-bottom: 1em;
+}
+
+.offer>p{
+    color: #333;
+}
+
+@media screen and (min-width:900px){
+    .offers-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #fff;
+        
+    }
+}
+
+.details{
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 3em;
+  align-items: start;
+}
+@media screen and (min-width:900px){
+.details{
+    width:100%;
+    flex-direction: row;
+}
+
+d1{
+    margin: 2em;
+}
+}
+
+
+.d1{
+text-align: center;
+background-color: #fff;
+box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+}
+
+.d1 >img{
+display: block;
+margin: auto;
+width: 100%;
+}
+
+.d1 p{
+padding: 2em;
+}
+
+.d{
+padding: 2em;
+width: 100%;
+background-color: #fff;
+}
+
+.br {
+  height: 40px;
+  background: #2475EB;
+}
