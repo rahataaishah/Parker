@@ -110,7 +110,8 @@
   
   @media screen and (min-width: 900px) {
     .car {
-      width: 35%;
+      width: 50%;
+      align-content: right;
     }
   }
   

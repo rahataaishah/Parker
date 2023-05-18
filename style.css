@@ -94,10 +94,12 @@ nav a{
     font-weight: lighter;
     line-height: 1.3em;
     text-transform: capitalize;
+    padding-right: 100px;
 }
 
 .question p{
     font-size: 17px;
+    padding-right: 50px;
 }
 
 .question .button{
@@ -118,7 +120,7 @@ nav a{
 }
 
 .team{
-    width: 80%;
+    width: 100%;
     animation: grow 1.5s linear;
     animation-fill-mode: forwards;
     user-select: none;
@@ -126,7 +128,9 @@ nav a{
 
 @media screen and (min-width:900px){
     .team{
-        width: 45%;
+        width: 80%;
+        height: 80%;
+
     }
 }
 
