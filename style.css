@@ -5,6 +5,8 @@
     font-family:'Montserrat', Arial,sans-serif;
 }
 
+
+
 header{
     background-color: #fff;
     padding: 1em;
@@ -86,6 +88,7 @@ nav a{
         flex-direction: row;
         columns: 2;
         border-radius: 0 0 150% 15%;
+        align-items: center;
     }
 }
 
@@ -209,7 +212,7 @@ a{
    
 @media screen and (min-width:900px){
     #reviews-wrapper{
-        width:100vw;
+        width: auto;
     }
 }
 
@@ -417,6 +420,16 @@ footer {
   padding: 2em;
   width: 100%;
   background-color: #fff;
+  
+  vertical-align: top;
+
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 3em;
+  align-items: start;
+  
   }
   
   .br {
@@ -424,5 +437,4 @@ footer {
     background: #2475EB;
   }
 
-  
   
