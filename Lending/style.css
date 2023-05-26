@@ -67,7 +67,7 @@
   }
   
   .entry {
-    background-image: linear-gradient(160deg, #003bde 0%, #58d0ff 100%);
+    background-image: linear-gradient(160deg, #026dd8 0%, #58d0ff 100%);
   }
   
   .entry-content {
@@ -192,7 +192,7 @@
   }
   
   form > #submit-button {
-    background-color: #003bde;
+    background-color: #2890db;
     color: #fff;
     outline: none;
     padding: 16px;
@@ -202,7 +202,7 @@
   }
   
   .benifits {
-    background-color: rgb(233, 236, 241);
+    background-color: rgb(255, 255, 255);
     padding: 2em;
   }
   
@@ -257,6 +257,7 @@
   @media screen and (min-width: 900px) {
     .benifit-card {
       background-color: #fff;
+      box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
       padding: 20px;
       padding-right: auto;
       border-radius: 5px;
@@ -329,18 +330,18 @@
 
 .question .button{
   padding:1em;
-  background-color: #003bde;
+  background-color:  #003bde;
   margin-top: 40px;
   display: inline-block;
 }
 .button a{
-  color: #0088ff;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .button a:visited{
-  color: #0088ff;
+  color: #ffffff;
 }
 
   .faqs {
@@ -460,3 +461,49 @@
     }
   }
   
+#reviews-wrapper{
+  margin: auto;
+}
+li {list-style: none; }
+a{
+  text-decoration:none;
+ }
+ 
+@media screen and (min-width:900px){
+  #reviews-wrapper{
+      width: auto;
+  }
+}
+
+.review{
+  box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
+  background-color: #fff;
+  padding: 15px;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 10% 40px 10%;
+}
+
+.review>img{
+  height: 80px;
+  width: 80px;
+  margin:20px;
+  border-radius: 50%;
+}
+
+.review>blockquote{
+  color: rgb(27, 26, 26) ;
+  font-weight: bold;
+  text-indent: none;
+  padding: 20px;
+}
+.review>.name{
+  font-weight: bolder;
+  margin:20px;
+}
+
+.review>.name::before{
+  content: '~';
+}
