@@ -404,12 +404,14 @@ footer {
   text-align: center;
   background-color: #fff;
   box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+  vertical-align: middle;
   }
   
   .d1 >img{
   display: block;
   margin: auto;
   width: 100%;
+  
   }
   
   .d1 p{
@@ -421,7 +423,7 @@ footer {
   width: 100%;
   background-color: #fff;
   
-  vertical-align: top;
+  vertical-align: middle;
 
   line-height: 1.5em;
   display: flex;

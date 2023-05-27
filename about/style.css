@@ -165,6 +165,7 @@ nav a{
     text-align: center;
     background-color: #fff;
     box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+    vertical-align: middle;
 }
 
 .d1 >img{
@@ -180,6 +181,7 @@ nav a{
 .d{
     padding: 2em;
     width: 100%;
+    vertical-align: middle;
 }
 
 .d > button{
