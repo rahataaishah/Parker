@@ -1,509 +1,563 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", Arial, sans-serif;
-  }
-  
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+header {
+  background-color: #fff;
+  padding: 1em;
+  padding-left: 1.5em;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 10;
+}
+
+@media screen and (min-width: 900px) {
   header {
-    background-color: #fff;
-    padding: 1em;
-    padding-left: 1.5em;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    top: 0;
-    z-index: 10;
+    position: sticky;
+    padding: 1.5em;
   }
-  
-  @media screen and (min-width: 900px) {
-    header {
-      position: sticky;
-      padding: 1.5em;
-    }
-  }
-  
-  .brand-name {
-    font-size: 23px;
-    display: inline;
-    font-weight: bolder;
-    color: #20292f;
-  }
-  
-  .logo {
-    display: inline;
-    max-height: 18px;
-  }
-  
+}
+
+.brand-name {
+  font-size: 23px;
+  display: inline;
+  font-weight: bolder;
+  color: #20292f;
+}
+
+.logo {
+  display: inline;
+  max-height: 18px;
+}
+
+nav {
+  float: right;
+}
+
+@media screen and (max-width: 700px) {
   nav {
-    float: right;
+    float: none;
   }
-  
-  @media screen and (max-width: 700px) {
-    nav {
-      float: none;
-    }
-    header {
-      text-align: center;
-      vertical-align: baseline;
-    }
-  }
-  nav > ul {
-    list-style: none;
-  }
-  
-  nav li {
-    text-indent: 0;
-    display: inline;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .active {
-    font-weight: 900;
-  }
-  
-  .entry {
-    background-image: linear-gradient(160deg, #026dd8 0%, #58d0ff 100%);
-  }
-  
-  .entry-content {
-    margin: 0;
-    color: #fff;
-    padding: 2em;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    /* border-radius: 0 0 50% 0; */
-  }
-  
-  @media screen and (min-width: 900px) {
-    .entry-content {
-      padding-left: 15%;
-      padding-right: 15%;
-      flex-direction: row;
-      columns: 2;
-    }
-  }
-  
-  .question > h1 {
-    font-size: 40px;
-    font-weight: lighter;
-    line-height: 1.3em;
-    text-transform: capitalize;
-    padding-bottom: 1em;
-  }
-  
-  .question p {
-    font-size: 17px;
-  }
-  
-  .car {
-    width: 100%;
-    user-select: none;
-  }
-  
-  @media screen and (min-width: 900px) {
-    .car {
-      width: 50%;
-      align-content: right;
-    }
-  }
-  
-  .contact {
-    max-width: 100vw;
-    padding-bottom: 20vh;
-  }
-  
-  @media screen and (min-width: 900px) {
-    .contact > h2 {
-      width: 70%;
-    }
-  }
-  
-  .form-container {
-    width: 80vw;
-    padding: 20px;
-    padding-bottom: 50px;
-    margin: auto;
-    background-color: #fff;
-    box-shadow: 0px 10px 80px -10px rgba(44, 54, 92, 0.2);
-    border-radius: 10px;
-  }
-  
-  .form-container p {
-    margin: auto;
+  header {
     text-align: center;
+    vertical-align: baseline;
   }
-  
-  @media screen and (min-width: 700px) {
-    .form-container {
-      width: 70vw;
-    }
-  }
-  
-  .form-container > h2 {
-    font-size: 30px;
-    margin-top: 50px;
-    text-align: center;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    color: #003bde;
-    text-transform: capitalize;
-  }
-  
-  .form-container > p {
-    padding: 20px;
-  }
-  
-  form {
-    width: 90%;
-    margin: auto;
-  }
-  
-  form > label {
-    display: none;
-  }
-  
-  form > input,
-  form > textarea,
-  form > select {
-    width: 100%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
-    padding: 10px;
-    outline: rgb(129, 125, 125);
-  }
-  
-  form > textarea {
-    height: 150px;
-  }
-  
-  textarea::-webkit-scrollbar {
-    display: none;
-  }
-  
-  form > #submit-button {
-    background-color: #2890db;
-    color: #fff;
-    outline: none;
-    padding: 16px;
-    width: 100px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  .benifits {
-    background-color: rgb(255, 255, 255);
-    padding: 2em;
-  }
-  
-  @media screen and (min-width: 900px) {
-    .benifits {
-      padding-left: 15%;
-      padding-right: 15%;
-    }
-  }
-  
-  .policies {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .policy {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  @media screen and (min-width: 900px) {
-    .policies {
-      flex-direction: row;
-    }
-  
-    .policy {
-      margin: 5%;
-    }
-    .policy > img {
-      width: 70%;
-    }
-  }
-  
-  .benifits > h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #333;
-  }
-  
-  .benifits h2 {
-    color: #333;
-  }
-  
-  .policy > img {
-    width: 90%;
-  }
-  
-  .benifit-card {
-    margin-top: 16px;
-  }
-  
-  @media screen and (min-width: 900px) {
-    .benifit-card {
-      background-color: #fff;
-      box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
-      padding: 20px;
-      padding-right: auto;
-      border-radius: 5px;
-    }
-  }
-  
-  .benifits ul {
-    line-height: 1.8em;
-    list-style-position: inside;
-  }
-  
-  .benifits > button {
-    margin: auto;
-    display: block;
-    background-color: #003bde;
-    color: #fff;
-    padding: 15px 20px 15px 20px;
-    text-transform: uppercase;
-    outline-width: 0;
-  }
-  .details{
-    line-height: 1.5em;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding-bottom: 3em;
-    align-items: start;
 }
-@media screen and (min-width:900px){
-  .details{
-      width:100%;
-      flex-direction: row;
-  }
-
-  d1{
-      margin: 2em;
-  }
+nav > ul {
+  list-style: none;
 }
 
-.d1{
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+nav li {
+  text-indent: 0;
+  display: inline;
+  padding: 10px;
 }
 
-.d1 >img{
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-
-.d1 p{
-  padding: 2em;
-}
-
-.d{
-  padding: 2em;
-  width: 100%;
-  background-color: #fff;
-}
-.br {
-  height: 40px;
-  background: #2475EB;
-}
-
-.br2 {
-  height: 40px;
-  background: #3B9DF5;
-}
-
-.question .button{
-  padding:1em;
-  background-color:  #003bde;
-  margin-top: 40px;
-  display: inline-block;
-}
-.button a{
-  color: #ffffff;
+nav a {
+  color: #000;
   text-decoration: none;
+}
+
+.active {
+  font-weight: 900;
+}
+
+.entry {
+  background-image: linear-gradient(160deg, #026dd8 0%, #58d0ff 100%);
+}
+
+.entry-content {
+  margin: 0;
+  color: #fff;
+  padding: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* border-radius: 0 0 50% 0; */
+}
+
+@media screen and (min-width: 900px) {
+  .entry-content {
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-direction: row;
+    columns: 2;
+  }
+}
+
+.question > h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  padding-bottom: 1em;
+}
+
+.question p {
+  font-size: 17px;
+}
+
+.car {
+  width: 100%;
+  user-select: none;
+}
+
+@media screen and (min-width: 900px) {
+  .car {
+    width: 50%;
+    align-content: right;
+  }
+}
+
+.contact {
+  max-width: 100vw;
+  padding-bottom: 20vh;
+}
+
+@media screen and (min-width: 900px) {
+  .contact > h2 {
+    width: 70%;
+  }
+}
+
+.form-container {
+  width: 80vw;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0px 10px 80px -10px rgba(44, 54, 92, 0.2);
+  border-radius: 10px;
+}
+
+.form-container p {
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .form-container {
+    width: 70vw;
+  }
+}
+
+.form-container > h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #003bde;
+  text-transform: capitalize;
+}
+
+.form-container > p {
+  padding: 20px;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+form > label {
+  display: none;
+}
+
+form > input,
+form > textarea,
+form > select {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  padding: 10px;
+  outline: rgb(129, 125, 125);
+}
+
+form > textarea {
+  height: 150px;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+form > #submit-button {
+  background-color: #003bde;
+  color: #fff;
+  outline: none;
+  padding: 16px;
+  width: 100px;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.button a:visited{
-  color: #ffffff;
+
+.question .button{
+padding:1em;
+background-color: #003bde;
+margin-top: 40px;
+display: inline-block;
+}
+.button a{
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
 }
 
-  .faqs {
+.button a:visited{
+color: #ffffff;
+}
+
+.benifits {
+  background-color: rgb(255, 255, 255);
+  padding: 2em;
+}
+
+@media screen and (min-width: 900px) {
+  .benifits {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.policies {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .policies {
+    flex-direction: row;
+  }
+
+  .policy {
+    margin: 5%;
+  }
+  .policy > img {
+    width: 70%;
+  }
+}
+
+.benifits > h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #333;
+}
+
+.benifits h2 {
+  color: #333;
+}
+
+.policy > img {
+  width: 90%;
+}
+
+.benifit-card {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 900px) {
+  .benifit-card {
     background-color: #fff;
-    padding: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .faqs > h1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: #333;
-  }
-  
-  
-  .faq {
-    color: #222;
-    margin: 10px;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    padding: 1em;
-    line-height: 1.6em;
-    background-color: rgb(248, 248, 250);
+    box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
+    padding: 20px;
+    padding-right: auto;
     border-radius: 5px;
   }
+}
 
-  @media screen and (min-width: 900px) {
-    .faqs {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 40px;
-      margin-top: 40px;
+.benifits ul {
+  line-height: 1.8em;
+  list-style-position: inside;
+}
 
-    }
- 
-    .faq-container{
-      display: inline-block;
-    }
-   
-  }
-  
-  
-
-  a{
-    text-decoration:none;
-   }
-   li {list-style: none; }
-  .q {
-    line-height: 2em;
-  }
-  
-  .others {
-    padding: 2em;
-    margin-top: 2em;
-    margin-bottom: 20%;
-  }
-  
-  @media screen and (min-width:900px){
-  .insurances {
-     display: flex;
-     flex-direction: row;
-  }
-  }
-  @media screen and (min-width: 900px) {
-    .others {
-      width: 80%;
-      margin: auto;
-    }
-  }
-  
-  .insurance {
-    width: 100%;
-    padding: 2em;
-    text-align: center;
-  }
-  
-  .insurance > img {
-    max-width: 90%;
-    height: auto;
-  }
-  
-  .insurance {
-    color: #333;
-    box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-  
-  @media screen and (min-width:800px){
-      .insurance{
-          margin: 2em;
-      }
-  }
-  
-  .others> button{
-    background-color: #003bde;
-    color: #fff;
-    outline: none;
-    padding: 16px;
-    text-align: center;
-    margin: auto;
-    display: block;
-    text-transform: uppercase;
-  }
-  
-  
-  footer {
-    color: rgb(148, 144, 144);
-    background-color: #1e2327;
-    padding: 1em;
-  }
-  
-  @media screen and (min-width: 900px) {
-    footer {
-       padding-left: 12%;
-    }
-  }
-  
-#reviews-wrapper{
+.benifits > button {
   margin: auto;
+  display: block;
+  background-color: #003bde;
+  color: #fff;
+  padding: 15px 20px 15px 20px;
+  text-transform: uppercase;
+  outline-width: 0;
+}
+
+.faqs {
+  background-color: #fff;
+  padding: 2em;
+}
+
+@media screen and (min-width: 900px) {
+  .faqs {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .faq-container{
+    display: inline-block;
+  }
+}
+
+.faqs > h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #333;
+}
+
+.faq {
+  color: #222;
+  margin: 10px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding: 1em;
+  line-height: 1.6em;
+  background-color: rgb(248, 248, 250);
+  border-radius: 5px;
 }
 li {list-style: none; }
 a{
   text-decoration:none;
  }
- 
+
+.q {
+  line-height: 2em;
+}
+
+.others {
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 20%;
+}
+
 @media screen and (min-width:900px){
-  #reviews-wrapper{
-      width: auto;
+.insurances {
+   display: flex;
+   flex-direction: row;
+}
+}
+@media screen and (min-width: 900px) {
+  .others {
+    width: 80%;
+    margin: auto;
   }
 }
 
-.review{
-  box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
+.insurance {
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+}
+
+.insurance > img {
+  max-width: 90%;
+  height: auto;
+}
+
+.insurance {
+  color: #333;
+  box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width:800px){
+    .insurance{
+        margin: 2em;
+    }
+}
+
+.others> button{
+  background-color: #003bde;
+  color: #fff;
+  outline: none;
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  text-transform: uppercase;
+}
+
+
+footer {
+  color: rgb(148, 144, 144);
+  background-color: #1e2327;
+  padding: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+     padding-left: 12%;
+  }
+}
+
+.offers{
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  /* background-color: #003bde; */
+}
+
+@media screen and (min-width:900px){
+  .offers{
+      width: 80%;
+  }
+}
+li {list-style: none; }
+
+a{
+  text-decoration:none;
+ }
+ 
+.offers > h1, .offers>p{
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
   background-color: #fff;
-  padding: 15px;
+}
+
+.offer{
+  padding: 2em 1em 2em 1em;
   line-height: 1.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 10% 40px 10%;
+  
+}
+
+.offer>img{
+  padding-bottom: 1em;
+}
+
+.offer>p{
+  color: #333;
+}
+
+@media screen and (min-width:900px){
+  .offers-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: #fff;
+      
+  }
+}
+
+.details{
+line-height: 1.5em;
+display: flex;
+flex-direction: column;
+margin: auto;
+padding-bottom: 3em;
+align-items: start;
+}
+@media screen and (min-width:900px){
+.details{
+  width:100%;
+  flex-direction: row;
+}
+
+d1{
+  margin: 2em;
+}
+}
+
+
+.d1{
+text-align: center;
+background-color: #fff;
+margin: 1em;
+box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+vertical-align: middle;
+}
+
+.d1 >img{
+display: block;
+margin: auto;
+width: 100%;
+box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+}
+
+.d1 p{
+padding: 2em;
+}
+
+.d{
+padding: 2em;
+width: 100%;
+background-color: #fff;
+}
+
+.br {
+height: 40px;
+background: #2475EB;
+}
+
+#reviews-wrapper{
+margin: auto;
+}
+li {list-style: none; }
+a{
+text-decoration:none;
+}
+
+@media screen and (min-width:900px){
+#reviews-wrapper{
+    width: auto;
+}
+}
+
+.review{
+box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
+background-color: #fff;
+padding: 15px;
+line-height: 1.5em;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 40px 10% 40px 10%;
 }
 
 .review>img{
-  height: 80px;
-  width: 80px;
-  margin:20px;
-  border-radius: 50%;
+height: 80px;
+width: 80px;
+margin:20px;
+border-radius: 50%;
 }
 
 .review>blockquote{
-  color: rgb(27, 26, 26) ;
-  font-weight: bold;
-  text-indent: none;
-  padding: 20px;
+color: rgb(27, 26, 26) ;
+font-weight: bold;
+text-indent: none;
+padding: 20px;
 }
 .review>.name{
-  font-weight: bolder;
-  margin:20px;
+font-weight: bolder;
+margin:20px;
 }
 
 .review>.name::before{
-  content: '~';
+content: '~';
+}
+
+.banner {
+background-color: #fff;
+height: auto;
+width: 1440px;
+vertical-align: middle;
+align-content: center;
+display: flex;
+flex-direction: row;
+box-shadow: 0px 10px 75px -10px rgba(44,54,92,0.2);
 }

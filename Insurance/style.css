@@ -477,13 +477,16 @@ d1{
 .d1{
 text-align: center;
 background-color: #fff;
+margin: 1em;
 box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
+vertical-align: middle;
 }
 
 .d1 >img{
 display: block;
 margin: auto;
 width: 100%;
+box-shadow: 0px 10px 80px -10px rgba(44,54,92,0.2);
 }
 
 .d1 p{
@@ -547,3 +550,14 @@ a{
 .review>.name::before{
   content: '~';
 }
+
+.banner {
+  background-color: #fff;
+  height: auto;
+  width: 1440px;
+  vertical-align: middle;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 10px 75px -10px rgba(44,54,92,0.2);
+  }

@@ -438,3 +438,13 @@ footer {
   }
 
   
+.banner {
+    background-color: #fff;
+    height: auto;
+    width: 1440px;
+    vertical-align: middle;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 10px 75px -10px rgba(44,54,92,0.2);
+    }
