@@ -106,16 +106,14 @@ nav a{
 
 @media screen and (min-width:1000px){
     .entry-content{
-        flex-direction: row;
+        flex-direction: column;
         align-items: baseline;
-        width: 80%;
-        margin: auto;
+        width: 50%;
+        margin-left: 15em;
     }
 }
 
 .contact-message , .contact-cards , .contact-form{
-    margin: auto;
-    width: 80%;
     line-height: 2em;
 }
 
@@ -229,4 +227,3 @@ footer{
        padding-left: 12%;
     }
 }
-  
