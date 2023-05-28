@@ -256,6 +256,7 @@ color: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #333;
+  margin-left: 25%;
 }
 
 .benifits h2 {
@@ -267,7 +268,7 @@ color: #ffffff;
 }
 
 .benifit-card {
-  margin-top: 16px;
+  margin-left: -10em;
 }
 
 @media screen and (min-width: 900px) {
@@ -303,10 +304,10 @@ color: #ffffff;
 @media screen and (min-width: 900px) {
   .faqs {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-left: 3em;
+    margin-right: 20em;
+    margin-top: 0em;
+    margin-bottom: 1em;
   }
 
   .faq-container{
@@ -345,10 +346,15 @@ a{
   margin-bottom: 20%;
 }
 
+.others h1 {
+  margin-left: 35%;
+}
+
 @media screen and (min-width:900px){
 .insurances {
    display: flex;
    flex-direction: row;
+   margin-left: -10em;
 }
 }
 @media screen and (min-width: 900px) {
@@ -455,17 +461,17 @@ a{
 }
 
 .details{
-line-height: 1.5em;
-display: flex;
-flex-direction: column;
-margin: auto;
-padding-bottom: 3em;
-align-items: start;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 3em;
+  align-items: start;
 }
 @media screen and (min-width:900px){
 .details{
-  width:100%;
-  flex-direction: row;
+    width:100%;
+    flex-direction: row;
 }
 
 d1{
@@ -473,6 +479,11 @@ d1{
 }
 }
 
+#bannerimg {
+  margin-left: 1em;
+  height: 20em;
+  width: 30em;
+}
 
 .d1{
 text-align: center;
@@ -494,11 +505,22 @@ padding: 2em;
 }
 
 .d{
-padding: 2em;
-width: 100%;
-background-color: #fff;
-vertical-align: middle;
+  padding: 2em;
+  width: 200em;
+  background-color: #fff;
+  vertical-align: middle;
+  }
+
+#parkerimg {
+    width: 90%;
+    height: 90%;
+    margin-left: 2em;
 }
+  
+/*#parkerbenefits {
+    margin-top: 2em;
+    margin-right: 70%;
+}*/
 
 .br {
 height: 40px;
@@ -520,22 +542,38 @@ text-decoration:none;
 }
 
 .review{
-box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
-background-color: #fff;
-padding: 15px;
-line-height: 1.5em;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 40px 10% 40px 10%;
+  box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
+  background-color: #fff;
+  padding: 15px;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  width: 80%;
 }
-
+  
 .review>img{
-height: 80px;
-width: 80px;
-margin:20px;
-border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin:20px;
+  border-radius: 50%;
 }
+  
+  .review>blockquote{
+  color: rgb(27, 26, 26) ;
+  font-weight: bold;
+  text-indent: none;
+  padding: 20px;
+  }
+  .review>.name{
+  font-weight: bolder;
+  margin:20px;
+  }
+  
+  .review>.name::before{
+  content: '~';
+  }
 
 .review>blockquote{
 color: rgb(27, 26, 26) ;
@@ -555,7 +593,7 @@ content: '~';
 .banner {
 background-color: #fff;
 height: auto;
-width: 1440px;
+width: 75em;
 vertical-align: middle;
 align-content: center;
 display: flex;

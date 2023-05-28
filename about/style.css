@@ -150,6 +150,11 @@ nav a{
     align-items: start;
 }
 
+#thing {
+    margin-top: 5em;
+    margin-right: 15em;
+}
+
 @media screen and (min-width:900px){
     .details{
         width:80%;
@@ -159,6 +164,10 @@ nav a{
     d1{
         margin: 2em;
     }
+}
+
+#stuff {
+    margin-right: 15em;
 }
 
 .d1{
@@ -199,7 +208,7 @@ nav a{
 
 .offers{
     width: 100%;
-    margin: auto;
+    margin-top: 1em;
     padding: 1em;
     /* background-color: #003bde; */
 }
@@ -234,6 +243,8 @@ a{
 
 @media screen and (min-width:900px){
     .offers-wrapper{
+        margin-top: 2em;
+        margin-left: 10em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -251,8 +262,9 @@ footer{
     }
 }
 #reviews-wrapper h2{
-    margin-top: 60px;
-    font-size:30px;
+    margin-top: 1em;
+    margin-right: 5em;
+    font-size: 30px;
     font-weight: bolder;
     text-align: center;
     line-height: 40px;
@@ -279,7 +291,9 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 10% 40px 10%;
+    margin-top: 2%;
+    margin-left: 7%;
+    width: 75%;
 }
 
 .review>img{
@@ -312,5 +326,8 @@ a{
     align-content: center;
     display: flex;
     flex-direction: row;
-    }
-    
+}
+
+#title {
+    margin-left: 2em;
+}
