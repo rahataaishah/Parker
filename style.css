@@ -1,11 +1,10 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family:'Montserrat', Arial,sans-serif;
 }
-
-
 
 header{
     background-color: #fff;
@@ -211,51 +210,7 @@ nav a{
 #reviews-wrapper{
     margin: auto;
 }
-li {list-style: none; }
 a{
-    text-decoration:none;
-   }
-   
-@media screen and (min-width:900px){
-    #reviews-wrapper{
-        width: auto;
-    }
-}
-
-.review {
-    box-shadow:0px 10px 75px -10px rgba(44,54,92,0.2);
-    padding: 15px;
-    line-height: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#reviewtext {
-    width: 50em;
-    margin-top: 2em;
-    margin-left: 15em;
-}
-
-.review>img{
-    height: 80px;
-    width: 80px;
-    margin:20px;
-    border-radius: 50%;
-}
-
-.review>blockquote{
-    color: rgb(27, 26, 26) ;
-    font-weight: bold;
-    text-indent: none;
-    padding: 20px;
-}
-.review>.name{
-    font-weight: bolder;
-    margin:20px;
-}
-
-.review>.name::before{
     content: '~';
 }
 
@@ -311,6 +266,10 @@ a{
     background-color: #fff;
     box-shadow:0px 10px 80px -10px rgba(44,54,92,0.2);
     border-radius: 10px;
+}
+
+#newthing {
+    margin-right: 15em;
 }
 
 .form-container  p{
