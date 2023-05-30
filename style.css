@@ -204,6 +204,10 @@ nav a{
     line-height: 40px;
 }
 
+#newthing {
+    margin-right: 15em;
+}
+
 #reviews-wrapper{
     margin: auto;
 }
@@ -253,10 +257,6 @@ a{
 
 .review>.name::before{
     content: '~';
-}
-
-@media screen and (min-width:900px){
-
 }
 
 .edge{
