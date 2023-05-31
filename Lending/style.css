@@ -530,6 +530,10 @@ vertical-align: middle;
   margin-left: -55em;
 }
 
+#newlist {
+  margin-left: -5em;
+}
+
 .br {
 height: 40px;
 background: #2475EB;
