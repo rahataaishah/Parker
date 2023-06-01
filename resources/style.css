@@ -575,3 +575,11 @@ a{
   .others h1 {
     margin-left: 35%;
   }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
