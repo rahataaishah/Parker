@@ -171,7 +171,8 @@ section {
 }
 
 .header .logo {
-  line-height: 0;
+  display: flex;
+  align-items: center;
 }
 
 .header .logo img {
@@ -186,6 +187,7 @@ section {
   color: #012970;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
+  line-height: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1242,8 +1244,8 @@ section {
 }
 
 .footer .footer-top .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .footer .footer-top .footer-info .logo img {
@@ -1258,6 +1260,7 @@ section {
   color: #012970;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
+  line-height: 1;
 }
 
 .footer .footer-top .footer-info p {
