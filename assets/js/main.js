@@ -218,4 +218,73 @@
     aos_init();
   });
 
+  document.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+  
+    var formId = event.target.id;
+  
+    if (formId === "lending-calculator-form") {
+      handleLendingFormSubmit(event);
+    } else if (formId === "insurance-calculator-form") {
+      handleInsuranceFormSubmit(event);
+    } else if (formId === "financing-calculator-form") {
+      handleFinancingFormSubmit(event);
+    }
+  });
+  
+  function handleLendingFormSubmit(event) {
+    // Retrieve user inputs
+    var propertyValue = parseFloat(document.getElementById("property-value").value);
+  
+    // Perform lending calculations
+    var loanAmount = calculateLoanAmount(propertyValue);
+  
+    // Display lending results
+    document.getElementById("lending-result").innerHTML = "Loan Amount: $" + loanAmount.toFixed(2);
+  }
+  
+  function calculateLoanAmount(propertyValue) {
+    // Custom logic to calculate loan amount based on property value
+    // Example: Loan amount is 80% of the property value
+    var loanAmount = propertyValue * 0.8;
+    return loanAmount;
+  }
+  
+  function handleInsuranceFormSubmit(event) {
+    // Retrieve user inputs
+    var businessValue = parseFloat(document.getElementById("business-value").value);
+    var numberOfEmployees = parseInt(document.getElementById("number-of-employees").value);
+  
+    // Perform insurance calculations
+    var insuranceAmount = calculateInsuranceAmount(businessValue, numberOfEmployees);
+  
+    // Display insurance results
+    document.getElementById("insurance-result").innerHTML = "Estimated Insurance Coverage: $" + insuranceAmount.toFixed(2);
+  }
+  
+  function calculateInsuranceAmount(businessValue, numberOfEmployees) {
+    // Custom logic to calculate insurance coverage amount
+    // Example: Coverage amount is 5% of the business value per employee
+    var insuranceAmount = businessValue * 0.05 * numberOfEmployees;
+    return insuranceAmount;
+  }
+  
+  function handleFinancingFormSubmit(event) {
+    // Retrieve user inputs
+  var equipmentCost = parseFloat(document.getElementById("equipment-cost").value);
+
+  // Perform equipment financing calculations
+  var loanAmount = calculateFinancingAmount(equipmentCost);
+
+  // Display equipment financing results
+  document.getElementById("financing-result").innerHTML = "Financing Amount: $" + loanAmount.toFixed(2);
+  }
+
+  function calculateFinancingAmount(equipmentCost) {
+    // Custom logic to calculate loan amount based on equipment cost
+    // Example: Loan amount is 90% of the equipment cost
+    var financingAmount = equipmentCost * 0.9;
+    return financingAmount;
+  }
+
 })();
