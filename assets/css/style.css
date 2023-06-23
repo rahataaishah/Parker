@@ -1346,3 +1346,33 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+/*--------------------------------------------------------------
+# Calculator
+--------------------------------------------------------------*/
+.calculator {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#lending-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#insurance-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#financing-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.calculator-description {
+  margin-top: 50px;
+}
+
